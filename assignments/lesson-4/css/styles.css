@@ -1,4 +1,5 @@
 body{
+    background-color: #728d85;
     font-family:open+sans-serif;
     font-size:18px;
     
@@ -6,7 +7,7 @@ body{
 }
 
 header {
-    background-color:lightblue;
+    background-color:#496c89;
     text-align:center;
     padding:.5rem;
     color:black;
@@ -43,8 +44,8 @@ header>img {
     padding:1.2rem;
     vertical-align: middle
     color:purple;
-    background-color:lightblue;
-    border:1pt solid lightblue;
+    background-color:#728d85;
+    border:1pt solid #728d85;
     font-size: 1.1rem;
     
     
@@ -56,3 +57,21 @@ header>img {
     
     
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ li {
+    display: inline-block;
+    color:#728d85;
+}
+
+
+
+a {
+    color:black;
+}
+
