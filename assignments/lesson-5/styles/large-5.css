@@ -1,0 +1,27 @@
+@media only screen and (min-width:750px){
+    
+    .mainnavigation li:first-child{
+        display:none;
+    }
+    nav {text-align: center;}
+    nav li{display:inline-block;}
+            
+        }
+        
+    }
+    
+.forecast{
+    display:block;
+}  
+
+
+
+
+
+
+
+
+
+
+    
+}
