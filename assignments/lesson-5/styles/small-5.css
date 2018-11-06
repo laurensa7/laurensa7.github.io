@@ -58,15 +58,24 @@ header>img {
     
 }
 
-ul {
+ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+     overflow:hidden;
     background-color:#728d85;
 }
+/****************************************************/
+/* Horizontal Menu: Flex Method*/
+/*nav ul {display:flex;}
+nav li{flex: 1 1 100%}
+*/
+/* Horizontal Menu: Inline Method */
 
- li {
-    display:inline;
+nav{text-align: center;}
+
+  nav li{
+    display:inline-block;
     margin-right:90px;
      list-style-type: none;
      
