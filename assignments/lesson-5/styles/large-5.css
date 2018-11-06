@@ -1,0 +1,17 @@
+@media only screen and(min-width: 750px){
+    
+    .forecast{
+        display:block;
+    }    
+    .mainnavigation li:first-child;{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
