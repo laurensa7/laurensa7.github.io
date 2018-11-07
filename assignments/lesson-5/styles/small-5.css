@@ -58,28 +58,8 @@ header>img {
     
 }
 
- nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-     overflow:hidden;
-    background-color:#728d85;
-}
-/****************************************************/
-/* Horizontal Menu: Flex Method*/
-/*nav ul {display:flex;}
-nav li{flex: 1 1 100%}
-*/
-/* Horizontal Menu: Inline Method */
 
-nav{text-align: center;}
 
-  .mainnavigation li{
-    display:none;
-    margin-right:90px;
-     list-style-type: none;
-     
-}
 
 
 
@@ -93,6 +73,16 @@ article>img{
     float:right;
 }
 
+
+
+
+  .mainnavigation {
+    display:none;
+    margin-right:90px;
+     list-style-type: none;
+     
+}
+
 .forecast{
     display:none;
 }
@@ -102,6 +92,8 @@ article>img{
     
     
 }
+
+
 .summary{
     position:absolute;
     top:1rem;
