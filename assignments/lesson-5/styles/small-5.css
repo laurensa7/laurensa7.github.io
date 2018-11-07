@@ -86,17 +86,7 @@ nav{text-align: center;}
 h1 {
     text-align: center;
 }
-.content-wrapper{
-    width:80%;
-    margin:4% 10% 5% 10%
-    
-}
-.text-wrapper{
-    width:100%;
-        position: relative;
-    margin-top:-34%;
-    color:#ffffff;
-}
+
 
 
 article>img{
