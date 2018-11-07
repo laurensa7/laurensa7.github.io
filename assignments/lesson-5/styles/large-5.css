@@ -2,16 +2,19 @@
     
     .forecast{
         display:block;
-    }    
+    }
+    
+    
     .mainnavigation li{
         display:block;
     }
+    
+    
     .heroheader{
         position:relative;
-    
-    
-}
-.summary{
+    }
+
+    .summary{
     position:absolute;
     top:1rem;
     left:2rem;
@@ -21,9 +24,7 @@
     padding: .75rem;
     color:#fff;
     box-shadow:0 0 30px #333;
-
-}
-    
+    }
     
     
     
