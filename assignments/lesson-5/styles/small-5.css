@@ -107,6 +107,11 @@ article>img{
     display:none;
 }
 
+.heroheader{
+    position:relative;
+    
+    
+}
 .summary{
     position:absolute;
     top:1rem;
