@@ -3,8 +3,8 @@
     .forecast{
         display:block;
     }    
-    .mainnavigation li:first-child;{
-        display: none;
+    .mainnavigation li{
+        display:block;
     }
     
     
