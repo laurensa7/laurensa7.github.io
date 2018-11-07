@@ -6,7 +6,26 @@
     .mainnavigation li{
         display:block;
     }
+    heroheader{
+    position:relative;
     
+    
+}
+.summary{
+    position:absolute;
+    top:1rem;
+    left:2rem;
+    background:radial-gradient(rgba(0,87,25,.75),
+        rgba(0,87,25,.95));
+    border:1px solid #777;
+    padding: .75rem;
+    color:#fff;
+    box-shadow:0 0 30px #333;
+
+    
+    
+    
+}
     
     
     
