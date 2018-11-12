@@ -1,3 +1,87 @@
+body {
+	background-color: #728d85;
+	font-family: open+sans-serif;
+	font-size: 18px;
+
+
+}
+
+header {
+	background-color: #496c89;
+	text-align: center;
+	padding: .5rem;
+	color: black;
+
+
+
+}
+
+
+
+header > img {
+	width: 150px;
+	height: auto;
+	vertical-align: middle;
+
+
+}
+
+.headertext {
+	display: inline-block;
+	vertical-align: middle;
+
+
+}
+
+.subheading {
+	font-size: 1.1rem;
+	color: black;
+	font-style: italic;
+
+
+}
+
+.currentconditions {
+	display: inline-block;
+	margin: 1rem 0rem 5rem;
+	padding: 1.2rem;
+	vertical-align: middle color:#496c89;
+	background-color: #496c89;
+	border: 1pt solid #728d85;
+	font-size: 1.1rem;
+
+
+}
+
+.currentconditions img {
+	width: 100px;
+	height: auto;
+
+
+}
+
+
+
+
+
+
+h1 {
+	text-align: center;
+}
+
+
+
+article > img {
+	float: right;
+}
+
+
+
+
+
+
+
+
 
 nav button {
 	margin: .2rem 2%;
@@ -43,4 +127,58 @@ nav ul.hide {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.forecast {
+	display: none;
+}
+
+.heroheader {
+	position: relative;
+
+
+}
+
+
+.summary {
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	background: radial-gradient(rgba(0, 87, 25, .75),
+		rgba(0, 87, 25, .95));
+	border: 1px solid #777;
+	padding: .75rem;
+	color: #fff;
+	box-shadow: 0 0 30px #333;
+
+
+
+
+}
+
+
+
+section.summary p {
+	margin: 0;
 }
