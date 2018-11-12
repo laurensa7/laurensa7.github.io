@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Weather Time Now | Town of Franklin | Forecast and Weather </title>
   <meta name="description" content="Weather Time Now weather when you need it">
-  <link href="https://fonts.google.com/specimen/Open+Sans" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small-6.css">
+	<link rel="stylesheet"href="styles/medium-6.css">
   <link rel="stylesheet" href="styles/large-6.css">
 
 </head>
@@ -24,29 +25,30 @@
       <img src="images/sun-256.png" alt="Current condition weather icon">
       <p>Sunny</p>
     </div>
-     
+
     <nav>
-       <button onclick="toggleMenu()"> &#9776;</button>
-      <ul class="mainnavigation">
-        <li><a href="#" onclick="toggleMenu()">&equiv;Menu</a></li>
-        <li><a href="#">&#10048;Home</a></li>
+		<button>&#9776;</button>
+      
+     
+          <ul class="nav">
+            
+            <li><a href="#">&#10048;Home</a></li>
 
-        <li>
-          <a href="#" onclick="">Menu</a></li>
-        <li>
-          <a href="#">Home</a></li>
-           <li class="active"><a href="#">Preston</a></li>
-        <li>
-          <a href="#">Soda Springs</a></li>
-        <li>
-          <a href="#">Fish Haven</a></li>
-        <li>
-          <a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
-      </ul>
-
-    </nav>
-
+            <li>
+              <a href="#" onclick="">Menu</a></li>
+            <li>
+              <a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li>
+              <a href="#">Soda Springs</a></li>
+            <li>
+              <a href="#">Fish Haven</a></li>
+            <li>
+              <a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+       
+      </nav>
   </header>
 
   <main>
@@ -116,9 +118,8 @@
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
+<script src="js.toggleMenu.js"></script>
 
- <script src"js/toggleMenu.js"></script>
-  <script src"js/currentdate.js"></script>
- 
-  </body> 
+</body>
+
 </html>

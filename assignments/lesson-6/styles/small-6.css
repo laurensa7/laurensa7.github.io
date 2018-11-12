@@ -73,21 +73,19 @@ article > img {
 }
 
 
-.mainnavigation {
-  margin-right: 90px;
-  list-style-type: none;
-}
 
 
 
-.mainnavigation li:nth-child(0) {
-  display: block;
-}
 
-.mainnavigation a {
-  display: block;
-  text-decoration: none;
-  padding: 5px;
+
+
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #555;
 }
 
 
@@ -97,13 +95,7 @@ nav ul {
   margin: 0;
 }
 
-nav button {
-  margin: .2rem 2%;
-  background-color: transparent;
-  border: none;
-  font-size: 1.6rem;
-  color: #555;
-}
+
 
 nav ul li a {
   display: block;
@@ -118,6 +110,16 @@ nav ul li. active a{background-color: rgba(0,0,0,0.2); color:#fff;}
 
 nau ul li a:hover {
   background-color: rgba(0, 0, 0, 0.4);
+}
+nav ul.hide{
+  display:none;
+}
+
+/*---------Clearfix: Force an Element not to collaspe -----*/
+.clearfix:after{
+  content: "";
+  display:table;
+  clear:both;
 }
 
 
