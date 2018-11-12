@@ -52,7 +52,10 @@
 		<section>
 			<h2>Preston</h2>
 			<div class="heroheader">
-				<img src="images/mainimage.jpg" alt="hero image">
+				<figure class="myphoto">
+				<img src="images/franklin-original4.jpg" alt="hero image">
+					<figcaption>franklin orginal</figcaption>
+				</figure>
 				<section class="summary">
 					<h3>Summary</h3>
 
@@ -116,6 +119,16 @@
 		</section>
 	</footer>
 	<script src="js.toggleMenu.js"></script>
+	<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+	<script>function toggleMenu(){
+	document.getElementById("primaryNav").classList.toggle("hide");
+}
+	</script>
 
 </body>
 
