@@ -44,7 +44,6 @@
 					<a href="#">Storm Center</a></li>
 				<li><a href="#">Gallery</a></li>
 			</ul>
-
 		</nav>
 	</header>
 
@@ -53,7 +52,7 @@
 			<h2>Preston</h2>
 			<div class="heroheader">
 				<figure class="myphoto">
-				<img src="images/mainimage.jpg" alt="hero image">
+					<img src="images/mainimage.jpg" alt="hero image">
 					<figcaption>franklin orginal</figcaption>
 				</figure>
 				<section class="summary">
@@ -121,14 +120,22 @@
 	<script src="js.toggleMenu.js"></script>
 	<p id="demo"></p>
 
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d.toDateString();
-</script>
-	<script>function toggleMenu(){
-	document.getElementById("primaryNav").classList.toggle("hide");
-}
+	<script>
+		var d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
+
 	</script>
+	<script>
+		function toggleMenu() {
+			document.getElementById("primaryNav").classList.toggle("hide");
+		}
+
+	</script>
+	<script> function windChill(form) {
+				wind=eval(form.wind.value);
+				temp=eval(form.temp.value);
+					chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+ </script>
+
 
 </body>
 
