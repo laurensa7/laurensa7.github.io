@@ -9,23 +9,58 @@
 	<link rel="stylesheet" href="styles/small-8.css">
 	<link rel="stylesheet" href="styles/medium-8.css">
 	<link rel="stylesheet" href="styles/large-8.css">
-	
+
 
 
 </head>
 
-<body>
 
-	
-	
+	<body>
+	<header>
+		<img src="images/Weather-Transparent-Background-279x279.png" alt="logo for weather time now">
+		<div class="headertext">
+			<h1> Weather Time Now</h1>
+			<div class="subheading">Weather when you need it</div>
+		</div>
+		<div class="currentconditions">
+			<img src="images/sun-256.png" alt="Current condition weather icon">
+			<p>Sunny</p>
+		</div>
+
+		<nav class="clearfix">
+
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="primaryNav" class="hide">
+				<li><a href="#">Menu</a></li>
+
+
+				<li><a href="preston-8.html">Home</a></li>
+
+				<li><a href="preston-8.html">Preston</a></li>
+				<li>
+					<a href="#">Soda Springs</a></li>
+				<li>
+					<a href="#">Fish Haven</a></li>
+				<li>
+					<a href="#">Storm Center</a></li>
+				<li><a href="gallery-8.html">Gallery</a></li>
+			</ul>
+
+		</nav>
+	</header>
+
+
+
 	<h1>Storm Center</h1>
-	<img src="images/bubble-clean-clear-1028600.jpg">
-	<form action="#" method="#">
+	<img src="images/bubble-clean-clear-1028600.jpg" />
+	
+	<form action="thanks.html" method="get">
 		<div>
 			<input id="name" type="text" required>
 			<label for="name">Your Name</label>
-
 		</div>
+
+
 		<div>
 			<input id="email" type="email" required>
 			<label for="email">Your email</label>
@@ -40,25 +75,18 @@
 			<textarea id="message"></textarea>
 			<label for="message">Your message</label>
 		</div>
-		
+
 		<div>
 			<input id="zipcode" type="zipcode" required>
 			<label for="zipcode">zipcode</label>
-		
+
 		</div>
-		<div><input type="submit"></div>
-		
-		
-
-
-
-
-
-
-
-
+		<div>
+			<div><input type="submit" value="submit"></div>
+		</div>
 
 
 	</form>
 </body>
+
 </html>

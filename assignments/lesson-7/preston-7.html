@@ -118,21 +118,32 @@
 	 </span>
 		</section>
 	</footer>
-	<script src="js.toggleMenu.js"></script>
+	<script src="scripts/toggleMenu.js"></script>
 	<p id="demo"></p>
 
-	<script>
+	<script src="scripts/currentdate.js"></script>
+	<!--<script>
 		var d = new Date();
 		document.getElementById("demo").innerHTML = d.toDateString();
-
-	</script>
-	<script>
+	</script>-->
+	<!--<script>
 		function toggleMenu() {
 			document.getElementById("primaryNav").classList.toggle("hide");
 		}
 
-	</script>
-
+	</script>-->
+	<script src="scripts/windchill.js"></script>
+	<script src="scripts/test.js"></script>
+	<form>
+	<label for = "temperature"> Temperature( * F): </label> 
+	<input type = "text" id = "temperature">
+	<label for = "windspeed"> Wind Speed(MPH): </label> 
+	<input type = "text" id = "windspeed">
+	<input type = "text" id = "output">
+<!--	<input type = "button" value = "wind chill" id = "windchill">-->
+	<button type="button" onclick="compute()">Calculate</button>
+		
+	</form>
 	
 </body>
 

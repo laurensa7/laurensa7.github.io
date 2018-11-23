@@ -165,7 +165,10 @@
 		display: inline-flex;
 		margin: 20px;
 	}
-
+	.gallery-grid li img {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
 	.gallery-grid {
 		width: 100%;
 		height: 100;
