@@ -15,7 +15,7 @@
 </head>
 
 
-	<body>
+<body>
 	<header>
 		<img src="images/Weather-Transparent-Background-279x279.png" alt="logo for weather time now">
 		<div class="headertext">
@@ -53,13 +53,14 @@
 
 	<h1>Storm Center</h1>
 	<img src="images/bubble-clean-clear-1028600.jpg" />
-	
+
 	<form action="thanks.html" method="get">
 		<div>
-			<input id="name" type="text" required>
-			<label for="name">Your Name</label>
+			<input id="firstname" type="text" required>
+			<label for="firstname">First name</label>
 		</div>
-
+		<input id="lastname" type="text" required>
+		<label for="lastname">Last name</label>
 
 		<div>
 			<input id="email" type="email" required>
@@ -71,15 +72,41 @@
 			<input id="phone" type="tel" pattern="[0-9]+">
 			<label for="phone">Your phone number</label>
 		</div>
-		<div>
-			<textarea id="message"></textarea>
-			<label for="message">Your message</label>
-		</div>
+
 
 		<div>
 			<input id="zipcode" type="zipcode" required>
-			<label for="zipcode">zipcode</label>
+			<label for="zipcode">Zipcode</label>
 
+		</div>
+		<div>
+			<h3>Storm Type</h3>
+			<input list="storms">
+			<datalist id="storms">
+				<option value="Flash Flood">
+				<option value="Tornado">
+				<option value="Thunderstorm">
+				<option value="Hail">
+				<option value="Hurricane">
+			</datalist><br>
+			Storm Severity: <br> 1<input type="range" name="range" min="0" max="10">10<br>
+		</div>
+		<h3>Region</h3>
+			<input list="Region">
+			<datalist id="Region">
+				<option value="Preston">
+				<option value="Fish Haven">
+				<option value="Soda Springs">
+				
+			</datalist><br>
+		<h3> Danger Level</h3>
+		<input type="radio" name="Danger" value="Yes" checked>Yes<br>
+		<input type="radio" name="Danger" value="No" checked>No<br>
+		<input type="radio" name="Danger" value="Maybe" checked>Maybe<br>
+	
+		<div>
+			<textarea id="message"></textarea>
+			<label for="message">Your message</label>
 		</div>
 		<div>
 			<div><input type="submit" value="submit"></div>
