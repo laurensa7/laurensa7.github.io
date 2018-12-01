@@ -49,23 +49,22 @@
 
 	<main>
 		<section id="towns">
-			
+
 		</section>
 		<section>
 			<h2>Preston</h2>
 			<div class="heroheader">
 				<figure class="myphoto">
 					<img src="images/mainimage.jpg" alt="hero image">
-					<figcaption>franklin orginal</figcaption>
+
 				</figure>
 				<section class="summary">
 					<h3>Summary</h3>
 
-					<p>Currently:Sunny</p>
-					<p>Temperature:80 F</p>
-					<p>Humidity</p>
-					<p>Precipitation:0 inches</p>
-					<p>Wind Speed: 5 mph</p>
+					<h2>Weather Conditions for <span id="place">city</span></h2>
+					<p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+					<p>Wind Speed is <span id="currentWind">00</span></p>
+					
 				</section>
 			</div>
 		</section>
@@ -115,65 +114,18 @@
 			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47369.38916637202!2d-111.91525876101703!3d42.09490138918551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1542929654988" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>
 		<section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">
-	 </span>
+			</span>
 		</section>
 	</footer>
 	<script src="scripts/toggleMenu.js"></script>
 	<p id="demo"></p>
-<script src="scripts/currentdate.js"></script>
-	<form>
-		<script src="scripts/windchill.js"></script>
-	<script src="scripts/test.js"></script>
-	<form>
-	<label for = "temperature"> Temperature( * F): </label> 
-	<input type = "text" id = "temperature">
-	<label for = "windspeed"> Wind Speed(MPH): </label> 
-	<input type = "text" id = "windspeed">
-	<input type = "text" id = "output">
-<!--	<input type = "button" value = "wind chill" id = "windchill">-->
-	<button type="button" onclick="compute()">Calculate</button>
-		
-	</form>
-	</form>
+	<script src="scripts/currentdate.js"></script>
 	
-	<script>
-		const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-		let request = new XMLHttpRequest();
-		request.open('GET', requestURL);
-		request.responseType = 'json';
-		request.send();
-
-
-		request.onload = function() {
-			let towndata = request.response;
-			let towns = towndata['towns'];
-
-
-			let output = document.getElementById('towns');
-
-			towns.forEach(town => { 
-				let towndiv = document.createElement('div');
-				towndiv.className="towns";
-				let myH3 = document.createElement('h3');
-				let theP = document.createElement('p');
-				theP.setAttribute('style', 'white-space: pre;');
-				myH3.textContent = town.name;
-				theP.textContent = "Motto: " + town.motto +"\r\n"; 
-				theP.textContent += "Year Founded: " + town.yearFounded +"\r\n"; 
-				theP.textContent += "Average Rainfall: " + town.averageRainfall +"\r\n"; 
-				towndiv.appendChild(myH3);
-				towndiv.appendChild(theP);
-				output.appendChild(towndiv);
-
-
-			});
-		};
-
-	</script>
+	<script src="scripts/weather.js"></script>	
 
 	
 
-	
+
 </body>
 
 </html>
