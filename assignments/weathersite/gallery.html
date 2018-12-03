@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Weather Time Now | Town of Franklin | Forecast and Weather </title>
+	<meta name="description" content="Weather Time Now weather when you need it">
+
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/small.css">
+	<link rel="stylesheet" href="styles/medium.css">
+	<link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+	<header>
+		<img src="images/Weather-Transparent-Background-279x279.png" alt="logo for weather time now">
+		<div class="headertext">
+			<h1> Weather Time Now</h1>
+			<div class="subheading">Weather when you need it</div>
+		</div>
+		<div class="currentconditions">
+			<img src="images/sun-256.png" alt="Current condition weather icon">
+			<p>Sunny</p>
+		</div>
+
+		<nav class="clearfix">
+
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="primaryNav" class="hide">
+				<li><a href="#">Menu</a></li>
+
+
+				<li><a href="preston.html">Home</a></li>
+
+				<li><a href="preston.html">Preston</a></li>
+				<li>
+					<a href="#">Soda Springs</a></li>
+				<li>
+					<a href="#">Fish Haven</a></li>
+				<li>
+					<a href="#">Storm Center</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+
+		</nav>
+	</header>
+
+	<main>
+		<h2>Weather Gallery</h2>
+		<div class="imagecontainer">
+			<ul class="gallery-grid">
+				<li>
+
+
+
+
+
+
+					<img src="images/4k-wallpaper-clouds-cloudy-1183099.jpg" alt="stormy clouds">
+					<a href="#">
+						<div class="gallery-info">
+
+
+						</div>
+					</a>
+
+
+				</li>
+				<li>
+
+
+
+					<img src="images/afterglow-background-beautiful-552791.jpg" alt="snowy">
+					<a href="#">
+						<div class="gallery-info">
+
+						</div>
+					</a>
+
+
+				</li>
+
+
+
+				<li>
+
+					<img src="images/adventure-clouds-country-258136.jpg" alt="sunny">
+					<a href="#">
+						<div class="gallery-info">
+
+						</div>
+					</a>
+				</li>
+
+
+
+
+
+				<li>
+					<img src="images/autumn-branch-bright-589816.jpg" alt="autumn">
+					<a href="#">
+						<div class="gallery-info">
+
+						</div>
+					</a>
+				</li>
+
+
+
+				<li>
+					<img src="images/black-and-white-clear-cool-459451.jpg" alt="rainy">
+					<a href="#">
+						<div class="gallery-info">
+
+						</div>
+					</a>
+				</li>
+
+
+
+
+				<li>
+
+					<img src="images/dawn-dramatic-dusk-1102915.jpg" alt="lightening">
+					<a href="#">
+						<div class="gallery-info">
+
+						</div>
+					</a>
+
+				</li>
+			</ul>
+
+		</div>
+
+
+	</main>
+
+
+	<footer>
+		<section class="contact">
+			Contact information placeholder
+			999.999.9999
+			123 Main St. Anytown, US 99999
+		</section>
+		<section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
+		</section>
+
+	</footer>
+	<script src="js.toggleMenu.js"></script>
+	<p id="demo"></p>
+
+	<script>
+		var d = new Date();
+		document.getElementById("demo").innerHTML = d.toDateString();
+
+	</script>
+	<script>
+		function toggleMenu() {
+			document.getElementById("primaryNav").classList.toggle("hide");
+		}
+
+	</script>
+
+</body>
+
+</html>
