@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=83263,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
+weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?q=Preston,Idaho,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
 
 weatherObject.send();
 
