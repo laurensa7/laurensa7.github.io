@@ -64,7 +64,9 @@
 					<h2>Weather Conditions for <span id="place">city</span></h2>
 					<p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
 					<p>Wind Speed is <span id="currentWind">00</span></p>
-					
+					<img src="images/sun-256.png" alt="current weather" id="weather_icon">
+
+
 				</section>
 			</div>
 		</section>
@@ -96,14 +98,12 @@
 			</table>
 		</section>
 		<article>
-			<h3>Preston Id Residents Look back on 'Napoleon Dynamite'</h3>
-			<img src="images/DSC01593.JPG" width="200" height"273">
 
-			<h4>Twelve years ago, Preston was a town like any other,
-				a relatively quiet part of southern Idaho with a
-				population of just under 5,000 people. Known for That
-				Famous Preston Night Rodeo</h4>
-			<p><a href="http://archive.sltrib.com/article.php?id=4022003&itype=CMSID">read article here</a></p>
+			<img src="images/blue-sky-blue-water-clouds-831081.jpg" align="center">
+
+
+			<h4>Soda Springs has many fun things to see</h4>
+			<p><a href="http://www.sodaspringsid.com/">read article here</a></p>
 
 
 		</article>
@@ -111,7 +111,7 @@
 
 	<footer>
 		<section class="contact">
-			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47369.38916637202!2d-111.91525876101703!3d42.09490138918551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1542929654988" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.91298972351!2d-111.62379172996022!3d42.66147063545874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1543955061072" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>
 		<section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">
 			</span>
@@ -120,29 +120,34 @@
 	<script src="scripts/toggleMenu.js"></script>
 	<p id="demo"></p>
 	<script src="scripts/currentdate.js"></script>
-	
-	<script src="scripts/weather.js"></script>	
+
+	<script src="scripts/weather.js"></script>
 
 	<script>
-						var weatherObject = new XMLHttpRequest();
-						weatherObject.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Soda,Springs,Idaho,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
+		var weatherObject = new XMLHttpRequest();
+		weatherObject.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Soda,Springs,Idaho,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
 
-						weatherObject.send();
+		weatherObject.send();
 
-						weatherObject.onload = function() {
-							var weatherInfo = JSON.parse(weatherObject.responseText);
-							console.log(weatherInfo);
-
-
-							document.getElementById("place").innerHTML = weatherInfo.name;
-							document.getElementById("currentTemp").innerHTML = weatherInfo.main.temp;
-							document.getElementById("currentWind").innerHTML = weatherInfo.wind.speed;
+		weatherObject.onload = function() {
+			var weatherInfo = JSON.parse(weatherObject.responseText);
+			console.log(weatherInfo);
 
 
+			document.getElementById("place").innerHTML = weatherInfo.name;
+			document.getElementById("currentTemp").innerHTML = weatherInfo.main.temp;
+			document.getElementById("currentWind").innerHTML = weatherInfo.wind.speed;
+			var iconcode = weatherInfo.weather[0].icon;
+			var icon_path = "//openweathermap.org/img/w/" + "04n" + ".png";
+			document.getElementById('weather_icon').src = icon_path;
 
-						} // end of function
 
-					</script>
+
+
+
+		} // end of function
+
+	</script>
 
 
 
