@@ -5,10 +5,11 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="@import url(http://fonts.googleapis.com/css?family=Raleway);">
 	<script src="jquery-2.2.1.min.js"></script>
 	<script>
 		window.onload=function(){
-		var element =document.getElementById('alcovelogo');	
+		var element =document.getElementById('images/logo.png');	
 		element.style.opacity=0.2;	
 			
 		}
@@ -20,7 +21,9 @@
 	<div class="container">
 		<!-- Header Div containing the Logo & Navigation Links -->
 		<div class="header">
-			<div class ="logo" id="alcovelogo"></div>
+			<div class ="images/logo.png" id="logo"></div>
+		
+			
 			<div class="navbar">
 				<ul class="navigation">
 					<li><a href="#">About Us</a></li>
@@ -34,11 +37,12 @@
 		</div>
 		<!-- Content Div -->
 		<div class="content">
-			<div class="headImage"></div>
+			<div class="images/head_image.jpg"></div>
+			<img src="images/head_image.jpg">
 			<!-- Get a Free Quote Form -->
 			<div class="registerForm">
 				<form id="GetAQuoteForm">
-					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
+					<img class="ReqAQuoteImg" src="images/quote.png" alt="">
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder">
@@ -114,9 +118,9 @@
 				<div class="boxes box3">
 					<h2>Our Work</h2>
 					<hr>
-					<a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/websites.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/mobileapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="images/webapps.jpg" alt=""></a>
 					<select name="showcaseOthers" id="showcaseOthers">
 						<option value="01">UI/UX Design</option>
 						<option value="02">Big Data Implementation</option>
