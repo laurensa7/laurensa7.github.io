@@ -284,6 +284,60 @@ div.towns img{
 }	
 	
 	
+.container {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	max-width: 1048px;
+}
+
+
+
+
+
+.norm:hover {
+	box-shadow: 0 0 50px #333;
+}
+
+/* rounded corners - boxmodel */
+background-color: rgba(0, 0, 0, 0.4);
+
+
+figcaption {
+	font-size: smaller;
+}
+
+/* hover effect */
+
+
+
+.container figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+	
+	
+	
 		
 		
 		
