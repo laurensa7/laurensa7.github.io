@@ -45,7 +45,23 @@
 
 	</header>
 	
-	
+	<!DOCTYPE html>
+<html>
+<body>
+
+<h4>Temple Closure Schedule for Nauvoo,Gilbert Arizona,Los Angeles and Idaho Falls</h4>
+
+<p id="demo"></p>
+
+<script>
+var myJSON = '{"name":"*Nauvoo Dec25 *Gilbert Dec25 Dec26*LosAngeles Dec25 Dec26*IdahoFalls Dec25", "temples":4, "schedule":"lds"}';
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
+</script>
+
+</body>
+</html>
+
 	
 	
 	</body>
