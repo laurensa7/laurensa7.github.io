@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temple Inn</title>
+	<link rel="stylesheet" href="styles/finalprojectsmall.css">
+	<link rel="stylesheet" href="styles/finalprojectmedium.css">
+	<link rel="stylesheet" href="styles/finalprojectlarge.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<div class="column">
+				<img src="DSC_7548.jpg" alt="gilbert arizona temple">
+			</div>
+			<div class="column">
+				<img src="DSC_0019.jpg" alt="nauvoo temple at night">
+			</div>
+			<div class="column">
+				<img src="DSC_0361.jpg" alt="snowy nauvoo">
+			</div>
+
+
+		</div>
+
+
+		<h1> Temple Inn </h1>
+		<nav class="clearfix">
+			<ul>
+				<li><a href="finalproject.html">Home</a></li>
+				<li><a href="temple.html">Temple</a></li>
+				<li><a href="reservations.html">Reservations</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+
+
+	</header>
+	<body>
+		<form action="thanks.html" method="get">
+		<div>
+			<input id="firstname" type="text" required>
+			<label for="firstname">First name</label>
+		</div>
+		<input id="lastname" type="text" required>
+		<label for="lastname">Last name</label>
+
+		<div>
+			<input id="email" type="email" required>
+			<label for="email">Your email</label>
+
+
+		</div>
+		<div>
+			<input id="phone" type="tel" pattern="[0-9]+">
+			<label for="phone">Your phone number</label>
+		</div>
+
+
+		<div>
+			<input id="zipcode" type="zipcode" required>
+			<label for="zipcode">Zipcode</label>
+
+		</div>
+		<div>
+			<h3>Rooms</h3>
+			<input list="Rooms">
+			<datalist id="Changing Room/Bathroom">
+				<option value="Long term stay">
+				<option value="Business Center">
+				<option value="Wedding Reception Hall">
+				<option value="Temple themed Sitting Area">
+				
+			</datalist><br>
+			Storm Severity: <br> 1<input type="range" name="range" min="0" max="10">10<br>
+		</div>
+		<h3>Region</h3>
+			<input list="Region">
+			<datalist id="Region">
+				<option value="Preston">
+				<option value="Fish Haven">
+				<option value="Soda Springs">
+				
+			</datalist><br>
+		<h3> Danger Level</h3>
+		<input type="radio" name="Danger" value="Yes" checked>Yes<br>
+		<input type="radio" name="Danger" value="No" checked>No<br>
+		<input type="radio" name="Danger" value="Maybe" checked>Maybe<br>
+	
+		<div>
+			<textarea id="message"></textarea>
+			<label for="message">Your message</label>
+		</div>
+		<div>
+			<div><input type="submit" value="submit"></div>
+		</div>
+
+
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+	
+
+
+
+	<footer>
+		<div class="leftcol">
+			<p id="info">&copy; 2018 Photography by Lauren Rae</p>
+		</div>
+	</footer>
+
+
+
+
+</body>
+
+</html>
