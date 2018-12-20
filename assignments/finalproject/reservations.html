@@ -43,90 +43,127 @@
 
 
 	</header>
+
 	<body>
 		<form action="thanks.html" method="get">
-		<div>
-			<input id="firstname" type="text" required>
-			<label for="firstname">First name</label>
-		</div>
-		<input id="lastname" type="text" required>
-		<label for="lastname">Last name</label>
+			<fieldset>
+				<label><span>Name:</span><input type="text" name="name" required></label>
+	
+				<label><span>Address:</span><input type="text" name="address" required></label>
+		
 
-		<div>
-			<input id="email" type="email" required>
-			<label for="email">Your email</label>
-
-
-		</div>
-		<div>
-			<input id="phone" type="tel" pattern="[0-9]+">
-			<label for="phone">Your phone number</label>
-		</div>
+		
+				<label><span>Email:</span><input type="email" name="email"></label>
+			
 
 
-		<div>
-			<input id="zipcode" type="zipcode" required>
-			<label for="zipcode">Zipcode</label>
-
-		</div>
-		<div>
-			<h3>Rooms</h3>
-			<input list="Rooms">
-			<datalist id="Changing Room/Bathroom">
-				<option value="Long term stay">
-				<option value="Business Center">
-				<option value="Wedding Reception Hall">
-				<option value="Temple themed Sitting Area">
+				<label><span>Phone:</span><input type="tel" name="phone"  required pattern="[0-9]+"></label>
 				
-			</datalist><br>
-			Storm Severity: <br> 1<input type="range" name="range" min="0" max="10">10<br>
-		</div>
-		<h3>Region</h3>
-			<input list="Region">
-			<datalist id="Region">
-				<option value="Preston">
-				<option value="Fish Haven">
-				<option value="Soda Springs">
+		
+
+				<label><span>Zipcode:</span><input type="zip" name="zipcode"></label>
+			
+				 
+			
+
+		
+		
 				
+				<label><span>Rooms:</span><input list="Rooms">
+				<datalist id="Rooms">
+					<option value="changing">
+					<option value="Longterm">
+					<option value="Business">
+					<option value="Wedding">
+					<option value="SittingArea">
+
+				</datalist><br>
+					<br></label>
+		
+			<label><span>States:</span><input list="State">
+			<datalist id="State">
+				<option value="Alabama">
+				<option value="Alaska">
+				<option value="Arizona">
+				<option value="Arkansas">
+				<option value="California">
+				<option value="Colorado">
+				<option value="Connecticut">
+				<option value="Delaware">
+				<option value="Florida">
+				<option value="Georgia">
+				<option value="Hawaii">
+				<option value="Idaho">
+				<option value="Illnois">
+				<option value="Indiana">
+				<option value="Iowa">
+				<option value="Kansas">
+				<option value="Kentucky">
+				<option value="Louisanna">
+				<option value="Maine">
+				<option value="Maryland">
+				<option value="Massachusetts">
+				<option value="Missouri">
+				<option value="Montana">
+				<option value="Nebraska">
+				<option value="Nevada">
+				<option value="New Hampshire">
+				<option value="New Jersey">
+				<option value="New Mexico">
+				<option value="North Carolina">
+				<option value="North Dakota">
+				<option value="OHIO">
+				<option value="Oklahoma">
+				<option value="Oregon">
+				<option value="Pennslyvania">
+				<option value="Rhode Island">
+				<option value="South Carolina">
+				<option value="South Dakota">
+				<option value="Tennessee">
+				<option value="Texas">
+				<option value="Utah">
+				<option value="Vermont">
+				<option value="Virgina">
+				<option value="Washington">
+				<option value="West Virgina">
+				<option value="Wisconsin">
+				<option value="Wyoming">
+
+
+
 			</datalist><br>
-		<h3> Danger Level</h3>
-		<input type="radio" name="Danger" value="Yes" checked>Yes<br>
-		<input type="radio" name="Danger" value="No" checked>No<br>
-		<input type="radio" name="Danger" value="Maybe" checked>Maybe<br>
-	
-		<div>
-			<textarea id="message"></textarea>
-			<label for="message">Your message</label>
-		</div>
-		<div>
-			<div><input type="submit" value="submit"></div>
-		</div>
+			<br>
+				</label>
+
+			<div>
+				<textarea id="message"></textarea>
+				<label for="message">Special Requests</label>
+			</div>
+			<div>
+				<div><input type="submit" value="submit"></div>
+			</div>
+
+			</fieldset>
+		</form>
 
 
-	</form>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 	</body>
 
-	
+
 
 
 
 	<footer>
 		<div class="leftcol">
-			<p id="info">&copy; 2018 Photography by Lauren Rae</p>
+			<p id="info">&copy; 2018 Temple Inn Suites</p>
 		</div>
 	</footer>
 
