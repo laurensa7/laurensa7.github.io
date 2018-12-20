@@ -26,3 +26,20 @@ body {
 
 }
 
+	h2 {
+			text-align:left;
+		}	
+
+
+
+.summary p{
+	flex:auto;
+	
+}
+	
+img {
+    float:left;
+}
+h2 {
+    float:center;
+}
