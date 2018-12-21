@@ -36,3 +36,24 @@
 
 		
 	}
+
+	.column {
+	float: left;
+	width: 32%;
+	padding: 5px;
+}
+
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: " ";
+	clear: both;
+	display: table;
+
+}
+
+.column {
+		display:block;
+}
