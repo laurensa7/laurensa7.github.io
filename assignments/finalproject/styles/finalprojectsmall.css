@@ -26,6 +26,10 @@ body {
 
 }
 
+.column {
+		display:block;
+}
+
 	h2 {
 			text-align:left;
 		}	
