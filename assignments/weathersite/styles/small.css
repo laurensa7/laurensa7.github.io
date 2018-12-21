@@ -230,4 +230,12 @@ div.towns img{
     content: "";
     display: table;
     clear: both;
-}	
+}
+nav ul li.active a {
+				background-color: rgba(0, 0, 0, 0.2);
+				color: #fff;
+			}
+
+			nav ul li a:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
