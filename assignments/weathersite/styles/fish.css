@@ -146,3 +146,14 @@ section.summary p {
 	margin: 0;
 }
  
+
+
+
+nav ul li.active a {
+				background-color: rgba(0, 0, 0, 0.2);
+				color: #fff;
+			}
+
+			nav ul li a:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
