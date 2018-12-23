@@ -69,30 +69,10 @@
 				No distribution center nearby<br>
 				Temple open Dec 19,20,21,22,26,27,28,29 <br>Baptism available all days,Endowments available everyday except the 19th,<br>
 				Initiatories not available, and Sealings not available.
-				<h4>Weather Conditions for <span id="place">city</span></h4>
-				<p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
-				<p>Wind Speed is <span id="currentWind">00</span></p>
-				<script>
-					var weatherObject = new XMLHttpRequest();
-								weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?q=Nauvoo,Illnois,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
 
-								weatherObject.send();
+				<p>Current Temperature is <span id="currentTemps">00</span>&deg;</p>
 
-								weatherObject.onload = function() {
-									var weatherInfo = JSON.parse(weatherObject.responseText);
-									console.log(weatherInfo);
-
-
-									document.getElementById("place").innerHTML = weatherInfo.name;
-									document.getElementById("currentTemp").innerHTML = weatherInfo.main.temp;
-									document.getElementById("currentWind").innerHTML = weatherInfo.wind.speed;
-
-									
-
-
-
-								} // end of function
-				</script>
+				
 
 
 
@@ -102,7 +82,11 @@
 		<div class="panel">
 			<p>Address:3301 S Greenfield rd<br> Telephone:(1) 480-822-5000<br> Services:Clothing rental available<br> no cafeteria available<br> no patron housing available Distribution nearby<br>Temple open Dec 19,20,21,22,26,27,28,29 <br>Baptism available all days,Endowments available everyday except the 19th,<br>
 				Initiatories not available, and Sealings not available.<br>
-			</p>
+				<p>Current Temperature is <span id="currentTempo">00</span>&deg;</p>
+
+				
+
+
 
 		</div>
 
@@ -110,11 +94,18 @@
 		<div class="panel">
 			<p>Address:10777 Santa Monica Blvd<br> Telephone:(1)310-474-5569<br> Services:Clothing rental available<br>cafeteria available<br> patron housing available Distribution nearby<br>Temple open Dec 19,20,21,22,27,28,29 <br>Baptism available all days,Endowments available everyday<br>
 				Initiatories and Sealings not available.<br></p>
+			<p>Current Temperature is <span id="currentTempat">00</span>&deg;</p>
+
+		
+
 		</div>
 		<button class="accordion">Idaho Falls Idaho</button>
 		<div class="panel">
 			<p>Address:1000 Memorial Dr<br> Telephone:(1) 208 522 7669<br> Services:Clothing rental available<br>cafeteria available<br> no patron housing available Distribution nearby<br>Temple open Dec 20,21,22,26,27,28,29 <br>Baptism available all days,Endowments available everyday <br>
 				Initiatories not available, and Sealings not available.<br></p>
+			<p>Current Temperature is <span id="currentTempatur">00</span>&deg;</p>
+
+			
 		</div>
 
 
@@ -173,6 +164,7 @@
 				background-color: rgba(0, 0, 0, 0.4);
 			}
 		</style>
+		<script src="scripts/weather.js"></script>
 	</body>
 </body>
 </html>
