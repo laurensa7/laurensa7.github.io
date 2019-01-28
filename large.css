@@ -1,0 +1,45 @@
+charset "UTF-8";
+/* CSS Document */
+
+
+@media screen and (min-width : 900px) {
+    #header{
+        top: 0;
+        left: 0;
+        width: 250px;
+        position: absolute;
+    }
+ 
+    body{
+        border-left: 250px #6495ED;
+    }
+}
+
+
+	
+
+
+	
+
+	h1 {
+		text-align: left;
+		
+
+
+
+
+	}
+
+	
+nav ul li.active a {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff
+}
+
+nav ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
