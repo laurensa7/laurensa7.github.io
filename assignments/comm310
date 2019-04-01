@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+	
+	<link rel="stylesheet" href="main.css">
+	
+	</head>
+
+   <header>
+      <img src="logo.png" alt="Lauren Allred Logo"/><br><br><br><br><br><br><br><br><br><br><br>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+	   
+    </header>
+	<body>
+	<div class="row">
+  <div class="column">
+    <img src="DSC_4415.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="DSC_5881.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="DSC_4740.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+	
+	
+	
+	
+	
+	</body>
+	
+	<footer>All content <span id="important">&copy; Photography by Lauren Rae</span>
+    </footer>
+	</html>
+	@charset "UTF-8";
+/* CSS Document */
+
+p {
+    margin-left: 0px;
+    overflow:auto;
+    display:block;
+    
+}
+
+li {
+  display: inline;
+}
+img {
+    float: left;
+    margin-right: 10px;
+    clear:both;
+}
+nav{
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+.row::after {
+  content: "" "" ;
+  clear: both;
+  display: table;
+}
+
+body {
+background-color:#ecabab;
+}
+header {
+	background-color: #68979b;}
+footer{
+	background-color:#68979b;
+	
+}
+<!doctype html>
+<html lang="en-US">
+	<head>
+	
+	<link rel="stylesheet" href="main.css">
+	
+	</head>
+
+   <header>
+      <img src="logo.png" alt="Lauren Allred Logo"/><br><br><br><br><br><br><br><br><br><br><br>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+	   
+    </header>
+	<body>
+		<section>
+		<img src="DSC_6091.jpg" alt="groom dipping bride">
+		<p>I have been taking pictures for 11 years professionally. It is my ultimate joy and goal to get the very best pictures for my customers. I take memories very seriously and will make any adjustments to my schedule that I need to be able to get the needed pictures. I am very experianced with many types of sessions the main ones being bridals,engagements,weddings,maternity,newborns,senior pictures,and family pictures </p>
+			</section><br><br><br><br><br><br><br><br><br>
+		
+</body>
+	<footer><nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="practice.html">Practice</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+	   All content <span id="important">&copy; Photography by Lauren Rae</span>
+    </footer>
+</html>
