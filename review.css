@@ -22,8 +22,8 @@ h2 {
 	float: center;
 }
 
-header {
+header{
 	background-color:#6495ED;
-	
-	
+	float:left;
+	height:800px;
 }
