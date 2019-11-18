@@ -1,32 +1,74 @@
+//colors
+$cornflower_blue: #6495ed;
+$ivory: ivory;
+$white: white;
+$beige: #f5f5dc;
+$color_karry_approx: #faebd7;
+$black: black;
+$color_gold_sand_approx: #deb887;
 
+//fonts
+$font_0: open +sans-serif;
 
-$font-family_1: open+sans-serif;
-$background-color_1: #fafae6;
+//urls
+$url_0: url(https://fonts.googleapis.com/css?family=Lora&display=swap);
 
+@import $url_0;
 body {
-	background-color: $background-color_1;
-	font-family: $font-family_1;
+	background-color: $beige;
+	font-family: $font_0;
 	font-size: 18px;
 }
-
-
-
-
-
 h2 {
 	text-align: left;
-}
-
-
-
-
-
-h2 {
 	float: center;
 }
-
-$background-color_1: #6495ED;
-
 header {
-	background-color: $background-color_1;
+	background-color: $cornflower_blue;
+	float: left;
+	height: 800px;
+	margin-right: 15%;
+	a {
+		color: $color_karry_approx;
+		&:hover {
+			color: $white;
+		}
+		&:active {
+			color: $color_gold_sand_approx;
+		}
+	}
+}
+.post-content {
+	
+	@include box-sizing($bs);
+	border-style: solid;
+	height: 200%;
+	width: 70%;
+	border-color: $ivory;
+	background-color: $white;
+	margin-right: 15%;
+	a {
+		color: $black;
+		&:hover {
+			color: $cornflower_blue;
+		}
+	}
+}
+@media screen and(max-width: 600px) {
+	header {
+		background-color: $cornflower_blue;
+		float: left;
+		height: 400px;
+		width: 100%;
+		padding: 1em;
+	}
+	.post-content {
+		@include box-sizing($bs);
+		box-sizing: border-box;
+		border-style: solid;
+		border-color: $ivory;
+		background-color: $white;
+		height: 40%;
+		width: 90%;
+	}
 }

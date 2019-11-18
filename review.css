@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
- 
+
 
 
 body {
-	background-color: #f5f5dc;
-	font-family: open+sans-serif;
-	font-size: 18px;
+  background-color: #f5f5dc;
+  font-family: open+sans-serif;
+  font-size: 18px;
 
 }
 
@@ -15,59 +15,62 @@ body {
 
 
 h2 {
-	text-align: left;
-  
+  text-align: left;
+
 }
 
 
 
 
 h2 {
-	float: center;
+  float: center;
 
 }
 
-header{
-	background-color:#6495ED;
-	float:left;
-	height:800px;
+header {
+  background-color: #6495ED;
+  float: left;
+  height: 800px;
   margin-right: 15%;
 
 
-  
+
 }
 
-header a{
-   color:#FAEBD7;
+header a {
+  color: #FAEBD7;
 }
 
-.post-content{
-    
-    box-sizing: border-box;
-    border-style:solid;
-    height:200%;  
-    width:70%;
- border-color:ivory;
+.post-content {
+
+  box-sizing: border-box;
+  border-style: solid;
+  height: 200%;
+  width: 70%;
+  border-color: ivory;
   background-color: white;
-  margin-right:15%;
- 
-  
-    
-    
-  }
+  margin-right: 15%;
+
+
+
+
+}
 
 .post-content a {
-  color:black;
+  color: black;
 }
-.post-content a:hover{
-  color:#6495ED; 
-  
+
+.post-content a:hover {
+  color: #6495ED;
+
 }
+
 header a:hover {
   color: white;
 }
+
 header a:active {
-  
+
   color: #deb887;
 }
 
@@ -77,38 +80,31 @@ header a:active {
 
 
 @media screen and (max-width: 600px) {
-  
-  header{
-	background-color:#6495ED;
-	float:left;
-	height:400px;
-    width:100%;
-    padding:1em;
-    
+
+  header {
+    background-color: #6495ED;
+    float: left;
+    height: 400px;
+    width: 100%;
+    padding: 1em;
+
+  }
+
+
+  .post-content {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: ivory;
+    background-color: white;
+    height: 40%;
+    width: 90%;
+
+
+
+  }
+
+
+
+
+
 }
-
-  
-  .post-content{
-  box-sizing: border-box;
- border-style:solid;
-  border-color:ivory;
-  background-color: white;
-  height:40%;
-  width:90%;
-  
-  
-	
-}
-
-  
-  
-  
-  
-}
-  
-
-
-  
-  
-  
-  
