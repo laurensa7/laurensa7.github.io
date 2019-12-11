@@ -1,0 +1,141 @@
+/** Styles for Sunflower CSS Zen Garden - Group project by Lauren Allred and Ruth Hansen **/
+/* need to figure out how to add image to the top of our website - perhaps image with transparency except for where the image is on the left? **/
+/* SCSS variables **/
+/* mixin for flex container - access using     @include flex-container;        */
+#css-zen-garden {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.intro h1, h2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-left: 50%;
+}
+
+.summary {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  width: 90%;
+  margin: 1em;
+}
+
+.preamble {
+  width: 90%;
+  margin: 1em;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 1em;
+}
+
+/* styles for large screen */
+@media screen and (min-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    margin-left: 1em;
+  }
+
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1em;
+  }
+
+  .main {
+    display: inline-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .preamble {
+    width: 100%;
+    margin: 1em;
+  }
+
+  .page-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .explanation {
+    width: 30%;
+    margin: 1em;
+  }
+
+  .participation {
+    width: 30%;
+    margin: 1em;
+  }
+
+  .benefits {
+    width: 30%;
+    margin: 1em;
+  }
+
+  .requirements {
+    width: 100%;
+    margin: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
