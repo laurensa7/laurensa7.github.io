@@ -1,12 +1,73 @@
 <!doctype html>
-<html lang="en-US">
+<html>
+
 <head>
+  <title>Story Writer Example from week one reading</title>
+  <script>
+    function loadStory() {
+      var storyName = document.getElementById("name_input").nodeValue
+      var storyHTML = localStorage.getItem(storyName)
+      document.getElementById("story_editor").value = storyHTML
+
+    }
+
+    function saveStory() {
+      var storyName =document.getElementById("name_input").value
+      var storyHTML= Document.getElementById("story_editor").value
+      localStorage.setItem(storyName,storyHTML)
+    
+    }
+    
+    function displayStory(){
+      var storyHTML=document.getElementById("story_editor").value
+      document.getElementById("story_display").innerHTML=storyHTML
+    }
+
+  </script>
+  
+  <style>
+    textarea{
+      
+      width:800px;
+        height:250px;
+      background-color: lightyellow;
+      
+    }
   
   
   
   
-  </head>
+  
+  </style>
+
+
+</head>
   <body>
-    <p>hi!</p>
+    <h1> Story Editor</h1>
+    Story Name:<input id=name_input>
+  <section>
+    <button onclick="loadStory()">Find and Edit it</button>
+    <button onclick="saveStory()">Save it</button>
+    <button onclick="displayStory() ">Display it</button>                           
+                                
+  </section>
+    <textarea id="story_editor" placeholder="Write a totally awesome story here"></textarea>
+    <section id="story_display"></section>
+  
+  
+  
+  
+  
+  
   </body>
+
+
+
+
+
+
+
+
+
+
 </html>
