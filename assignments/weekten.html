@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon</title>
+</head>
+<body>
+  <div class="pokemon">
+    <ul id="pokeList">
+      <li class="head">Pokemons:</li>
+      <ul id="pokeListItems">
+        
+      </ul>
+    </ul>
+  </div>
+ <style>@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+* {
+  font-family: 'Righteous', cursive;
+}
+
+#pokeList {
+  list-style: none;
+}
+
+#pokeList .head {
+  font-size: 20px;
+   }</style>
+  
+  <script>
+    fetch(`https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/
+`)
+  .then(async response => {
+    let pokemon = await response.json();
+    let list = document.getElementById("pokeListItems");
+ 
+    (pokemon.results).forEach(item => {
+      let li = document.createElement("li");
+      li.innerHTML = `<p>${item.name}</p>`;
+      list.appendChild(li);
+    });
+  })
+  .then(data => {});
+
+  
+  
+  
+  
+  </script>
+</body>
+</html>

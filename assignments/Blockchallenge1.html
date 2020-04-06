@@ -1,24 +1,123 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-  
-  
-  
-  
-  </head>
-  <body>
-    <main>
-    <h1>Block Challenge </h1>
-     
-    
-    </main>
-  
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+<body id="gradient">
+  <h2 class="color1" type="color" name=color1></h2>
+  <h2 class="color2" type="color" name="color2"></h2>
+  <h1>To Do List</h1>
+  <p id="first">Start With</p>
+  <input type="text" id="userinput" placeholder="enter items">
+  <button id="enter">ENTER</button>
+  <ul>
+    <li class="purple">Cleaning List</li>
+    <li> Clean kitchen</li>
+
+    <li>Clean front room</li>
+
+  </ul>
   <style>
-    body{
-    background-color:#d3d3d3;
+    .coolTitle{
+      text-align:center;
+      font-family:,sans-serif;
+      font-size:40px;
+      transform:skewY(-10deg);
+      letter-spacing: -8px;
+      color:tomato;
+      text-shadow:
+        -1px -1px 0 firebrick,
+        -2px -2px 0 firebrick,
+        -3px -3px 0 firebrick,
+        -4px -4px 0 firebrick,
+        -5px -5px 0 firebrick,
+        -6px -6px 0 firebrick,
+        -7px -7px 0 firebrick,
+        -8px -8px 0 firebrick,
+        -30px 20px 40px dimgrey;
     }
-    </style>
+    .done {
+
+      text-decoration: line-through;
+    }
+    .purple{
+      color:purple;
+    }
+  </style>
+  <script>
+    alert("touch to mark item as finished")
+    window.onload=function(){
+      var color1=document.querySelector(".color1");
+      var color2=document.querySelector(".color2");
+      var body=document.getElementById("gradient")
+      
+      
+      function randColor(){
+        return"#" +
+          Math.random().toString(16).slice(2,8)
+      }
+      function setGradient(){
+        body.style.background=
+          "linear-gradient(to right,"
+        +color1.value
+        +"",""
+        +color2.value
+        +")";
+      }
+      
+    var button = document.getElementById("enter");
+    var input =
+      document.getElementById("userinput");
+    var ul = document.querySelector("ul");
+    var listItems =
+        documents.getElementsByTagName("li");
+
+    function inputLength() {
+      return input.value.length;
+    }
+
+    function creatListElement() {
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(input.value));
+      ul.appendChild(li)
+      input.value = "";
+    }
+
+    function addListAfterClick() {
+      if (inputlength() > 0 {
+          creatListElement();
+        }
+      }
+
+      function addListAfterKeypress(event) {
+        if (inputLength() > 0 && event.which == 13)
+      
+
+      {
+        creatListElement()
+
+
+      }
+
+    }
+    button.addEventListener("click"),
+      addListAfterClick;
+    input.addEventListener("keypress",
+      addListAfterKeypress);
+    ul.onclick = function(event) {
+      var target = event.target;
+      target.classList.toggle("done");
+      
+    }
+    color1.value= randColor()
+    color2.value= randColor()
+    setGradient()
+    }
+  </script>
+
+
+  
+</body>
   
   
-  </body>
+  
 </html>

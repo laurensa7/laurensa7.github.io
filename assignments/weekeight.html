@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="people">
+        <ul id="peopleList"></ul>
+        <!-- <button id="btnNext">next</button> -->
+    </div>
+    <style>
+  * {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+ul li{
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+button {
+    padding: 1rem;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+  
+  
+  </style>
+</body>
+<script src="./app.js"></script>
+  <script>
+    function getPeople(userUrl = undefined) {
+    let proxy = `https://cors-anywhere.herokuapp.com/`;
+    let url = (userUrl ? `${proxy}${userUrl}` : `${proxy}https://swapi.co/api/people`);
+
+    fetch(url)
+        .then(async (result) => {
+            let people = await result.json();
+            people = people;
+
+            console.log(people);
+
+            let peopleList = document.getElementById("peopleList");
+            let div = document.getElementById("peopleList");
+            people.results.forEach(person => {
+                let item = document.createElement("li");
+                item.innerHTML = `Name: ${person.name}<br>Hair Color: ${person.hair_color}`;
+                peopleList.appendChild(item);
+
+            });
+
+            let buttonPrevious = document.createElement("button");
+            buttonPrevious.innerHTML = '← previous';
+            if (!people.previous) {
+                buttonPrevious.disabled = true;
+            }
+            div.appendChild(buttonPrevious)
+            buttonPrevious.onclick = () => {
+                getPeople(people.previous)
+            };
+
+            let buttonNext = document.createElement("button");
+            buttonNext.innerHTML = 'next →';
+            if (!people.next) {
+                buttonNext.disabled = true;
+            }
+            div.appendChild(buttonNext)
+            buttonNext.onclick = () => {
+                getPeople(people.next)
+            };
+        });
+}
+
+getPeople();
+  
+  
+  
+  
+  
+  </script>
+</html>
