@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Week 4 Team Activity</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="board">
+     <div class="box1" id="box"></div>
+     <div class="box2" id="box"></div>
+     <div class="box3" id="box"></div>
+     <div class="box4" id="box"></div>
+     <div class="box5" id="box"></div>
+     <div class="box6" id="box"></div>
+     <div class="box7" id="box"></div>
+     <div class="box8" id="box"></div>
+     <div class="box9" id="box"></div>
+    </div>
+    <button id="reset">Reset</button>
+    <style>
+      
+.board {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+}
+
+#box { 
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+}
+
+.box1 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.box2 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.box3 {
+  height: 50px;
+  width: 50px;
+  border-bottom: 1px solid black;
+}
+
+.box4 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.box5 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.box6 {
+  height: 50px;
+  width: 50px;
+  border-bottom: 1px solid black;
+}
+
+.box7 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+}
+
+.box8 {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid black;
+}
+
+.box9 {
+  height: 50px;
+  width: 50px;
+}
+
+    </style>
+    <script>
+      
+      const board = document.querySelector('.board');
+      const reset = document.getElementById('reset');
+      
+      board.addEventListener('click', play);
+      reset.addEventListener('click', resetGame);
+      
+      const playerX = 'X';
+      const playerO = 'O';
+      let player = playerX;
+      
+      function play(p) {
+        p.target.innerHTML = player;
+        if (player === playerX) {
+          player = playerO;
+        }
+        else { player = playerX; }
+      }
+      
+      function resetGame() {
+        const board = document.querySelector('.board');
+        for (let i = 0; i < board.children.length; i++) {
+          board.children[i].innerText = '';
+        }
+      }
+   
+    </script>
+  </body>
+</html>
