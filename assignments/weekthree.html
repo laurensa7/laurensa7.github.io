@@ -1,15 +1,24 @@
-Example of object literal that describes Superman <br>
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>JavaScript Objects</h2>
 
-const superman = {
-    name: 'Superman',
-    'real name': 'Clark Kent',
-    height: 75,
-    weight: 235,
-    hero: true,
-    villain: false,
-    allies: ['Batman','Supergirl','Superboy'],
-    fly() {
-        return 'Up, up and away!';
-    }
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
 };
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
