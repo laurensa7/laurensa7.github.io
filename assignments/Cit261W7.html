@@ -12,7 +12,28 @@
       <h2>Notes</h2>
       <p> Functions have properties that are built in. Custom properties can be added too. Functions have an apply method . Depending on certain situations functions are able to dynamically redefine themselves in the functions body. Higher order functions are functions that return other functions. Use Const to declare variables to help avoid destructive data transformations. Definition of Ajax : technique for receiving data in the background. Ajax can be used to make a partial page update. You can communicate with external APIs using Ajax. The easiest way to send form data is to use the FormData interface.</p>
     <h2> Code examples Week 7 </h2>
-      <p>Code Source: ""</p>
+      <p>Code Example:
+        const getUsers = (ms) => { // No need to make this async
+    return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+// this function is async as we need to use await inside it
+export const index = async (req, res) => {
+    await getUsers(5000);
+
+    res.json([
+      {
+        id: 1,
+        name: 'John Doe',
+      },
+      { id: 2,
+        name: 'Jane Doe',
+      },
+    ]);
+};
+      
+      
+      </p>
       <form action="weekseven.html"><input type="submit" value="weekseven" /></form>
     
     </main>
