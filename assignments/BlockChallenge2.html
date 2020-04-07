@@ -1,24 +1,165 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en-us">
+
+
 <head>
-  
-  
-  
-  
-  </head>
-  <body>
-    <main>
-    <h1>Block Challenge </h1>
-     
-    
-    </main>
-  
-  <style>
-    body{
-    background-color:#d3d3d3;
-    }
-    </style>
-  
-  
-  </body>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temple Inn</title>
+	<link rel="stylesheet" href="styles/normalization.css">
+	<link rel="stylesheet" href="styles/finalprojectsmall.css">
+	<link rel="stylesheet" href="styles/finalprojectmedium.css">
+	<link rel="stylesheet" href="styles/finalprojectlarge.css">
+
+</head>
+
+<body>
+	
+
+
+		<h1>Nauvoo Info</h1>
+		
+
+
+
+
+
+
+
+	<body>
+		
+		
+		<h3>Around town in Nauvoo</h3>
+
+		<button class="accordion">Nauvoo Temple<br>Click for info!</button>
+		<div class="panel">
+			<p><br> Telephone:(1) 217-453-6252<br>
+				Clothing rental available<br>
+				No cafeteria available<br>
+				No patron housing available<br>
+				No distribution center nearby<br>
+				
+
+				<p>Current Temperature is <span id="place">00</span>&deg;</p>
+
+				<script>
+					var weatherObject = new XMLHttpRequest();
+					weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=62354,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
+
+					weatherObject.send();
+
+					weatherObject.onload = function() {
+						var weatherInfo = JSON.parse(weatherObject.responseText);
+						console.log(weatherInfo);
+
+
+						
+						document.getElementById("place").innerHTML = weatherInfo.main.temp;
+						
+
+						
+
+					} // end of function
+
+				</script>
+
+
+
+		</div>
+
+		<button class="accordion">Nauvoo Mercantile<br> Click for info!</button>
+		<div class="panel">
+			 Telephone:(1)217-453-2182<br>Hours:9-7 M-Sat
+		
+				
+
+
+
+
+
+		</div>
+
+		<button class="accordion">Temple House Nauvoo Art Gallery</button>
+		<div class="panel">
+			<p> Telephone:1(217)-980-1050<br> Hours:10-5 M-Sat </p>
+	
+
+
+
+		</div>
+		<button class="accordion">Nauvoo Tours and Gift Shop</button>
+		<div class="panel">
+			<p> Telephone:1(217)-453-6803 </p>
+			
+
+
+		</div>
+
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+
+		</script>
+
+		<style>
+			.accordion {
+				background-color: #add8e6;
+				color: #444;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 15px;
+				transition: 0.4s;
+			}
+
+			.active,
+			.accordion:hover {
+				background-color: #7788aa;
+			}
+
+			.panel {
+				padding: 0 18px;
+				display: none;
+				background-color: #7788aa;
+				overflow: hidden;
+			}
+
+		</style>
+
+
+		<style>
+			nav ul li.active a {
+				background-color: rgba(0, 0, 0, 0.2);
+				color: #fff;
+			}
+
+			nav ul li a:hover {
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+
+		</style>
+      <style> body{
+        background-color: #7788aa;
+        }
+      </style>
+		<script src="scripts/weather.js"></script>
+	</body>
+</body>
+
 </html>
