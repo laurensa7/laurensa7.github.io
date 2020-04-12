@@ -1,90 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Week eight</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temple Inn</title>
+	<link rel="stylesheet" href="styles/normalization.css">
+	<link rel="stylesheet" href="styles/finalprojectsmall.css">
+	<link rel="stylesheet" href="styles/finalprojectmedium.css">
+	<link rel="stylesheet" href="styles/finalprojectlarge.css">
 
-    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="people">
-        <ul id="peopleList"></ul>
-        <!-- <button id="btnNext">next</button> -->
-    </div>
-    <style>
-  * {
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 18px;
-}
+	
 
-ul li{
-    list-style: none;
-    padding-bottom: 1rem;
-}
 
-button {
-    padding: 1rem;
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-}
-  
-  
-  
-  </style>
+		<h1>Dayton ohio weather</h1>
+		
+
+
+
+
+
+
+
+	<body>
+		
+		
+		<h3>Current Temprature</h3>
+
+		
+          
+				
+
+				<p>Current Temperature is <span id="place">00</span>&deg;</p>
+
+				<script>
+					var weatherObject = new XMLHttpRequest();
+					weatherObject.open('GET', '//api.openweathermap.org/data/2.5/weather?zip=45458,us&appid=87a8f86b8f2c57a0b3b94458c45bd89e&units=imperial', true);
+
+					weatherObject.send();
+
+					weatherObject.onload = function() {
+						var weatherInfo = JSON.parse(weatherObject.responseText);
+						console.log(weatherInfo);
+
+
+						
+						document.getElementById("place").innerHTML = weatherInfo.main.temp;
+						
+
+						
+
+					} // end of function
+
+				</script>
+
+
+
+		
+
+		
+
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+
+		</script>
+
+		
+
+
+	
+		<script src="scripts/weather.js"></script>
+	</body>
 </body>
-<script src="./app.js"></script>
-  <script>
-    function getPeople(userUrl = undefined) {
-    let proxy = `https://cors-anywhere.herokuapp.com/`;
-    let url = (userUrl ? `${proxy}${userUrl}` : `${proxy}https://swapi.co/api/people`);
 
-    fetch(url)
-        .then(async (result) => {
-            let people = await result.json();
-            people = people;
-
-            console.log(people);
-
-            let peopleList = document.getElementById("peopleList");
-            let div = document.getElementById("peopleList");
-            people.results.forEach(person => {
-                let item = document.createElement("li");
-                item.innerHTML = `Name: ${person.name}<br>Hair Color: ${person.hair_color}`;
-                peopleList.appendChild(item);
-
-            });
-
-            let buttonPrevious = document.createElement("button");
-            buttonPrevious.innerHTML = '← previous';
-            if (!people.previous) {
-                buttonPrevious.disabled = true;
-            }
-            div.appendChild(buttonPrevious)
-            buttonPrevious.onclick = () => {
-                getPeople(people.previous)
-            };
-
-            let buttonNext = document.createElement("button");
-            buttonNext.innerHTML = 'next →';
-            if (!people.next) {
-                buttonNext.disabled = true;
-            }
-            div.appendChild(buttonNext)
-            buttonNext.onclick = () => {
-                getPeople(people.next)
-            };
-        });
-}
-
-getPeople();
-  
-  
-  
-  
-  
-  </script>
 </html>
