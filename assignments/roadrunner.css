@@ -1,0 +1,317 @@
+main{
+  
+ box-sizing: border-box;
+  border-style: solid;
+  height: 200%;
+  width: 100%;
+  border-color: ivory;
+  background-color: white;
+  margin-right: 15%;}
+*{
+	    font-family: "Comic Sans MS";
+	}
+	
+	h1, h2{
+	    white-space: nowrap;
+	}
+	html{
+	   
+	    background-repeat: no-repeat;
+	    background-size: auto 100%;
+	}
+	
+	 
+	header{
+	    padding-top: 2%;
+	    margin-left: 2%;
+	    display: flex;
+	    width: 96%;
+	    justify-content: space-between;
+	    flex-wrap: nowrap;
+      
+	    
+	}
+	header a{
+	    text-decoration: none;
+	    color: black;
+	}
+	#logo{
+	    width: 100%;
+	}
+	#logo img{
+	    width: 100px;
+	}
+	#account{
+	    padding-top: 5px;
+	    white-space: nowrap;
+	}
+	#account img{
+	    width: 20px;
+	}
+	#account a:hover{
+	    color: #de2226;
+	}
+	header div{
+	    flex-wrap: nowrap;
+	}
+	nav{
+	    width: 100%;
+	    white-space: nowrap;
+	    background-color: #de2226;
+	    height: 40px;
+	    
+	}
+	nav a{
+	    font-size: .9em;
+	    text-decoration: none;
+	    background-color: #de2226;
+	    color: white;
+	    padding-left: .1em;
+	    padding-right: .1em;
+	    position: relative;
+	    top: 10px;
+	}
+	nav a:hover{
+	    background-color: white;
+	    color: #de2226;
+	    padding-bottom: 10px;
+	}
+	/* each page has a different class for the body*/
+	/*
+	.Home nav a[title~=Home],
+	.Cannon nav a[title~=Cannon],
+	.Explosive nav a[title~=Explosive],
+	.Misc nav a[title~=Misc],
+	.Rocket nav a[title~=Rocket],
+	.Trap nav a[title~=Trap]
+	*/
+	.selected-cat
+	{
+	    background-color: white;
+	    color: #de2226;
+	    padding-bottom: 10px;
+	}
+	main{
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+	
+	#feature-img{
+	    width: 100%;
+	}
+	#description{    
+	    position: absolute;
+	    right: 30px;
+	    top: 200px;
+	    color: #de2226;
+	}
+	#description div{
+	    font-size: 3vw;
+	}
+	#description img{
+	    width: 25vw;
+	}
+	#reviews{
+	    width: 100%;
+	    font-size: 1em;
+	}
+	.recipes{
+	    display: flex;
+	    justify-content: center;
+	    width: 100%;
+	    font-size: 1em;
+	}
+	.recipe{
+	    width: 50%;
+	    text-align: center;
+	}
+	.recipe a{
+	    white-space: nowrap;
+	}
+	.recipe img{
+	    width: 100px;
+	}
+	footer{
+	    padding-bottom: 10px;
+	}
+	hr{
+	    height: .2em;
+	    background-color: black;
+	}
+	.tableRow:hover{
+	    background-color: slategray;
+	}
+	.tableRow td form input{
+	    cursor: pointer;
+	}
+	.rowEven{
+	    background-color: #C2C2C2;
+	}
+	footer p{
+	    font-size: x-small;
+	    text-align: center;
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	}
+	.product-list{
+	  box-sizing: border-box;
+	}
+	#prod-display{
+	 margin: 0;
+	 padding: 0;
+	 display: flex;
+	 flex-direction: column;
+	 flex-flow: row wrap;
+	 justify-content: center;
+	}
+	#prod-display li{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  text-align: center;
+	  padding: .5em;
+	  margin: .5em;
+	  border: 1px #ccc solid;
+	  list-style-type: none;
+	  width: 40%;
+	}
+	#prod-display li img{
+	    height: 100px;
+	    border-radius: 5px;
+	}
+	#prod-display li img:hover{
+	    box-shadow: 0px 0px 10px 2px grey;
+	}
+	#prod-display li h2{
+	    margin: 0;
+	    white-space: normal;
+	}
+	#prod-detail{
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	#prod-detail div{
+	    padding: .5em;
+	    width: 100%;
+	}
+	#prod-img{
+	    text-align: center;
+	}
+	#prod-img img{
+	    height: 250px;
+	}
+	#thumbnails img{
+	    height: 40px;
+	    margin: 5px;
+	    border-radius: 2px;
+	}
+	#thumbnails a img:hover{
+	    box-shadow: 0px 0px 10px 2px grey;
+	}
+	#prod-detail h2{
+	    margin: 0;
+	}
+	.highlight{
+	    color: #de2226;
+	}
+	#prod-detail h3{
+	    margin: 0;
+	}
+	.cat-head a{
+	    text-decoration: none;
+	    color: inherit;
+	}
+	.cat-head a:hover{
+	    color: #de2226;
+	}
+	.review-name{
+	    font-weight: 900;
+	}
+	.review-date{
+	    color: grey;
+	    font-weight: lighter;
+	}
+	@media screen and (min-width: 700px){
+	    #prod-img img{
+	        height: 300px;
+	    }
+	    #prod-display li{
+	        width: 22%;
+	    }
+	    #prod-display li h2{
+	        font-size: 1.5em;
+	    }
+	    #thumbnails img{
+	        height: 50px;
+	        margin: 8px;
+	    }
+	    body{
+	        margin: 0px 15px 15px 15px;
+	        padding: 0px 10px;
+	    }
+	    h1, h2{
+	        font-size: 2em;
+	    }
+	    nav{
+	        height: 60px;
+	    }
+	    nav a{
+	        font-size: 1.5em;
+	        padding-left: .2em;
+	        padding-right: .2em;
+	        top: 15px;
+	    }
+	    nav a:hover{
+	        padding-bottom: 20px;
+	    }
+	    /* each page has a different class for the body*/
+	    /*
+	    .Home nav a[title~=Home],
+	    .Cannon nav a[title~=Cannon],
+	    .Explosive nav a[title~=Explosive],
+	    .Misc nav a[title~=Misc],
+	    .Rocket nav a[title~=Rocket],
+	    .Trap nav a[title~=Trap]
+	    */
+	    .selected-cat
+	    {
+	        padding-bottom: 20px;
+	    }
+	    #description{
+	        right: 40px;
+	        top: 250px;
+	 
+	    }
+	    #logo img{
+	        width: 150px;
+	    }
+	    #account{
+	        padding-top: 10px;
+	        font-size: 1.5em;
+	    }
+	    #account img{
+	        width: 30px;
+	    }
+	    #login form{
+	    width: 50%;
+	    }
+	    #reviews{
+	        font-size: 1.5em;
+	    }
+	    .recipes{
+	        font-size: 2em;
+	    }
+	    .recipe img{
+	        width: 150px;
+	    }
+	    footer p{
+	        font-size: small;
+	    }
+	}
+
+	
+	 
+	
+
+
+
